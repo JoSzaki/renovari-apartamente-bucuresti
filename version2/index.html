@@ -7,7 +7,7 @@
   <meta name="description" content="Renovări apartamente București – [NUME], [FIRMA]. Zugrăveli, gletuire, rigips, gresie și faianță și renovare băi. Ofertă gratuită: [TELEFON]" />
   <meta name="keywords" content="renovări apartamente București, renovare apartament București, zugrăveli București, gletuire, rigips București, montaj gresie faianță, renovare baie, amenajări interioare București" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#a84a30" />
+  <meta name="theme-color" content="#15246b" />
   <link rel="canonical" href="https://joszaki.github.io/renovari-apartamente-bucuresti/" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"LocalBusiness","name":"[FIRMA] – [NUME]","description":"Renovări apartamente București","telephone":"[TELEFON]","address":{"@type":"PostalAddress","addressLocality":"București","addressCountry":"RO"},"areaServed":"București"}
@@ -15,191 +15,211 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --cream: #f7f3ec;
-      --cream-2: #fbf8f3;
-      --ink: #1b2433;
-      --body-c: #3c3a37;
-      --muted: #8a7e72;
-      --terra: #a84a30;
-      --terra-dark: #8c3c26;
-      --terra-tint: #ecd9c9;
-      --line: #e6dccf;
+      --navy: #15246b;
+      --navy-2: #1c2f8c;
+      --blue: #2742d6;
+      --orange: #ff5722;
+      --orange-d: #e64a17;
+      --ink: #12141b;
+      --paper: #f4f1e9;
+      --paper-2: #ebe6da;
       --white: #ffffff;
-      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --muted: #5d6470;
+      --disp: "Space Grotesk", "Arial Narrow", Arial, sans-serif;
       --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      --bd: 2px solid var(--ink);
     }
     html { scroll-behavior: smooth; }
-    body { font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--body-c); background: var(--cream); -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--sans); font-size: 16px; line-height: 1.65; color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 6%; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+
+    /* DISPLAY HEADINGS */
+    .display { font-family: var(--disp); font-weight: 700; text-transform: uppercase; line-height: 0.94; letter-spacing: -1.5px; }
+    .hl { background: var(--orange); color: var(--white); padding: 0 .1em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+    /* TAG / NUMBERED LABEL */
+    .tag { display: inline-flex; align-items: center; gap: 9px; font-family: var(--disp); font-weight: 600; font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: var(--ink); }
+    .tag::before { content: ""; width: 26px; height: 3px; background: var(--orange); display: inline-block; }
+    .tag--light { color: var(--white); }
 
     /* NAV */
-    .nav { position: sticky; top: 0; z-index: 1000; background: rgba(247,243,236,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-    .nav__inner { max-width: 1120px; margin: 0 auto; padding: 16px 6%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { line-height: 1.1; }
-    .brand__name { font-family: var(--serif); font-weight: 700; font-size: 1.45rem; color: var(--ink); letter-spacing: .2px; }
-    .brand__sub { font-family: var(--sans); font-weight: 600; font-size: 0.66rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
-    .nav__links { display: flex; align-items: center; gap: 28px; list-style: none; }
-    .nav__links a { font-size: 0.95rem; font-weight: 600; color: var(--ink); transition: color .2s; }
-    .nav__links a:hover { color: var(--terra); }
-    .nav__phone { font-weight: 600 !important; color: var(--terra) !important; border: 1.5px solid var(--terra); border-radius: 6px; padding: 9px 16px; transition: background .2s, color .2s !important; white-space: nowrap; }
-    .nav__phone:hover { background: var(--terra); color: var(--white) !important; }
+    .nav { position: sticky; top: 0; z-index: 1000; background: var(--paper); border-bottom: var(--bd); }
+    .nav__inner { max-width: 1200px; margin: 0 auto; padding: 14px 5%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { line-height: 1.05; }
+    .brand__name { font-family: var(--disp); font-weight: 700; font-size: 1.4rem; text-transform: uppercase; letter-spacing: -.5px; color: var(--ink); }
+    .brand__sub { font-weight: 700; font-size: 0.62rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--orange); margin-top: 4px; }
+    .nav__links { display: flex; align-items: center; gap: 26px; list-style: none; }
+    .nav__links a { font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); transition: color .15s; }
+    .nav__links a:hover { color: var(--blue); }
+    .nav__phone { color: var(--white) !important; background: var(--orange); border: 2px solid var(--ink); padding: 9px 16px !important; letter-spacing: .5px !important; transition: background .15s, transform .12s; }
+    .nav__phone:hover { background: var(--ink); color: var(--white) !important; transform: translate(-2px,-2px); box-shadow: 4px 4px 0 var(--orange); }
     .nav__burger { display: none; }
 
     /* BUTTONS */
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; font-family: var(--sans); font-weight: 600; font-size: 1rem; border: none; cursor: pointer; border-radius: 6px; padding: 14px 28px; transition: background .2s, transform .15s, color .2s; white-space: nowrap; }
-    .btn--terra { background: var(--terra); color: var(--white); }
-    .btn--terra:hover { background: var(--terra-dark); transform: translateY(-1px); }
-    .btn--ghost { background: transparent; color: var(--ink); padding: 14px 8px; }
-    .btn--ghost:hover { color: var(--terra); }
-    .btn--light { background: var(--white); color: var(--terra); font-weight: 700; }
-    .btn--light:hover { background: var(--cream); transform: translateY(-1px); }
-
-    /* EYEBROW PILL */
-    .pill { display: inline-block; background: var(--terra-tint); color: var(--terra-dark); font-weight: 700; font-size: 0.74rem; letter-spacing: 2px; text-transform: uppercase; padding: 9px 18px; border-radius: 5px; }
-
-    /* HERO */
-    .hero { padding: 88px 0 80px; }
-    .hero__pill { margin-bottom: 30px; }
-    .hero__h1 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.04; letter-spacing: -1.5px; margin-bottom: 28px; max-width: 16ch; }
-    .hero__lead { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--muted); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.45; margin-bottom: 28px; max-width: 30ch; }
-    .hero__body { font-size: 1.08rem; color: var(--body-c); line-height: 1.75; max-width: 54ch; margin-bottom: 38px; }
-    .hero__ctas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-
-    /* TRUST ROW */
-    .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .trust__grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-    .trust__item { padding: 28px 24px; }
-    .trust__item:not(:last-child) { border-right: 1px solid var(--line); }
-    .trust__k { font-family: var(--serif); font-weight: 700; font-size: 1.15rem; color: var(--ink); margin-bottom: 4px; }
-    .trust__v { font-size: 0.92rem; color: var(--muted); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; font-family: var(--disp); font-weight: 600; font-size: 0.95rem; letter-spacing: .5px; text-transform: uppercase; border: 2px solid var(--ink); cursor: pointer; padding: 15px 30px; transition: transform .12s, box-shadow .12s, background .15s, color .15s; white-space: nowrap; }
+    .btn--orange { background: var(--orange); color: var(--white); }
+    .btn--orange:hover { transform: translate(-3px,-3px); box-shadow: 6px 6px 0 var(--ink); }
+    .btn--ink { background: var(--ink); color: var(--white); }
+    .btn--ink:hover { transform: translate(-3px,-3px); box-shadow: 6px 6px 0 var(--orange); }
+    .btn--outline { background: transparent; color: var(--ink); }
+    .btn--outline:hover { background: var(--ink); color: var(--white); }
+    .btn--white { background: var(--white); color: var(--ink); }
+    .btn--white:hover { transform: translate(-3px,-3px); box-shadow: 6px 6px 0 rgba(0,0,0,.35); }
 
     /* SECTION */
-    section { padding: 92px 0; }
-    .sec-head { max-width: 680px; margin-bottom: 52px; }
-    .sec-eyebrow { display: block; font-weight: 700; font-size: 0.76rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--terra); margin-bottom: 16px; }
-    .sec-h2 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.1; letter-spacing: -0.8px; margin-bottom: 18px; }
-    .sec-sub { font-size: 1.06rem; color: var(--muted); line-height: 1.7; }
+    section { padding: 96px 0; }
+    .sec-head { max-width: 720px; margin-bottom: 54px; }
+    .sec-head .tag { margin-bottom: 20px; }
+    .sec-h2 { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: clamp(2.1rem, 5vw, 3.6rem); line-height: 0.96; letter-spacing: -1.5px; margin-bottom: 18px; }
+    .sec-sub { font-size: 1.05rem; color: var(--muted); line-height: 1.65; max-width: 60ch; }
+
+    /* HERO */
+    .hero { padding: 84px 0 0; }
+    .hero__pill { display: inline-block; border: 2px solid var(--ink); background: var(--white); font-family: var(--disp); font-weight: 600; font-size: 0.74rem; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; margin-bottom: 34px; }
+    .hero__h1 { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: clamp(2.8rem, 8.5vw, 6.4rem); line-height: 0.9; letter-spacing: -2.5px; margin-bottom: 34px; }
+    .hero__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: end; margin-bottom: 70px; }
+    .hero__lead { font-family: var(--disp); font-weight: 500; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.25; color: var(--ink); margin-bottom: 24px; }
+    .hero__body { font-size: 1.04rem; color: var(--muted); line-height: 1.7; margin-bottom: 32px; }
+    .hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* TRUST (color-block band) */
+    .trust { border-top: var(--bd); border-bottom: var(--bd); background: var(--navy); }
+    .trust__grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); }
+    .trust__item { padding: 36px 5%; color: var(--white); }
+    .trust__item:not(:last-child) { border-right: 2px solid rgba(255,255,255,.18); }
+    .trust__k { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 1.25rem; letter-spacing: -.5px; margin-bottom: 8px; color: var(--white); }
+    .trust__k span { color: var(--orange); }
+    .trust__v { font-size: 0.92rem; color: rgba(255,255,255,.72); line-height: 1.5; }
 
     /* SERVICES */
-    .services { background: var(--cream-2); border-top: 1px solid var(--line); }
-    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-    .svc { background: var(--cream-2); padding: 34px 30px 38px; transition: background .2s; }
-    .svc:hover { background: var(--white); }
-    .svc__idx { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.05rem; color: var(--terra); margin-bottom: 14px; }
-    .svc__title { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.3px; }
-    .svc__text { font-size: 0.95rem; color: var(--body-c); line-height: 1.65; }
-    .svc__price { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 0.85rem; color: var(--terra-dark); }
+    .services { background: var(--white); }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--ink); border: var(--bd); }
+    .svc { background: var(--white); padding: 36px 30px 34px; transition: background .18s, color .18s; position: relative; }
+    .svc:hover { background: var(--navy); color: var(--white); }
+    .svc__idx { font-family: var(--disp); font-weight: 700; font-size: 2.4rem; line-height: 1; color: var(--orange); margin-bottom: 20px; letter-spacing: -1px; }
+    .svc__title { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 1.18rem; letter-spacing: -.3px; margin-bottom: 12px; line-height: 1.05; }
+    .svc__text { font-size: 0.93rem; line-height: 1.6; color: var(--muted); }
+    .svc:hover .svc__text { color: rgba(255,255,255,.8); }
+    .svc__price { display: inline-block; margin-top: 18px; font-family: var(--disp); font-weight: 600; font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); border: 2px solid var(--ink); padding: 5px 10px; }
+    .svc:hover .svc__price { color: var(--white); border-color: var(--orange); background: var(--orange); }
 
     /* PRICES */
-    .prices { background: var(--cream); }
-    .price-wrap { max-width: 840px; }
+    .prices { background: var(--paper); }
+    .price-wrap { max-width: 900px; }
     .price-table { width: 100%; border-collapse: collapse; }
-    .price-table thead th { text-align: left; font-weight: 700; font-size: 0.74rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); padding: 0 0 16px; border-bottom: 2px solid var(--ink); }
+    .price-table thead th { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1.5px; text-align: left; padding: 0 0 16px; border-bottom: 4px solid var(--ink); }
+    .price-table thead th:nth-child(2) { text-align: center; width: 110px; }
     .price-table thead th:last-child { text-align: right; }
-    .price-table td { padding: 17px 0; border-bottom: 1px solid var(--line); font-size: 1rem; color: var(--ink); }
-    .price-table td:nth-child(2) { color: var(--muted); font-size: 0.9rem; text-align: center; width: 90px; }
-    .price-table td:last-child { text-align: right; font-family: var(--serif); font-weight: 700; color: var(--terra-dark); white-space: nowrap; }
-    .price-table td.byagr { text-align: center; font-style: italic; color: var(--muted); font-family: var(--sans); font-weight: 400; }
-    .price-note { margin-top: 22px; font-size: 0.9rem; color: var(--muted); line-height: 1.6; max-width: 840px; }
+    .price-table td { padding: 18px 0; border-bottom: 2px solid rgba(18,20,27,.14); font-size: 1.02rem; font-weight: 600; }
+    .price-table td:nth-child(2) { text-align: center; color: var(--muted); font-weight: 500; font-size: 0.88rem; }
+    .price-table td:last-child { text-align: right; font-family: var(--disp); font-weight: 700; color: var(--orange-d); white-space: nowrap; }
+    .price-table td.byagr { text-align: center; font-family: var(--sans); font-weight: 500; font-style: italic; color: var(--muted); }
+    .price-note { margin-top: 24px; font-size: 0.9rem; color: var(--muted); line-height: 1.6; max-width: 900px; }
     .price-note strong { color: var(--ink); }
 
-    /* CALCULATOR */
-    .calculator { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .calc-panel { max-width: 720px; }
-    .calc-grid { display: grid; grid-template-columns: 1fr 200px; gap: 18px; margin-bottom: 22px; }
-    .calc-field label { display: block; font-weight: 600; font-size: 0.74rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 9px; }
-    .calc-field select, .calc-field input { width: 100%; padding: 14px 16px; background: var(--white); border: 1px solid var(--line); border-radius: 6px; color: var(--ink); font-family: var(--sans); font-size: 1rem; appearance: none; -webkit-appearance: none; transition: border-color .2s; }
-    .calc-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a84a30' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
-    .calc-field select:focus, .calc-field input:focus { outline: none; border-color: var(--terra); }
-    .calc-result { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 22px 24px; background: var(--white); border: 1px solid var(--terra); border-radius: 8px; }
-    .calc-result__label { font-size: 0.92rem; color: var(--muted); }
-    .calc-result__value { font-family: var(--serif); font-weight: 700; font-size: 2.4rem; color: var(--terra-dark); letter-spacing: -1px; }
-    .calc-disclaimer { margin-top: 16px; font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
-    .calc-disclaimer a { color: var(--terra-dark); font-weight: 600; }
+    /* CALCULATOR (navy color block) */
+    .calculator { background: var(--navy); color: var(--white); border-top: var(--bd); border-bottom: var(--bd); }
+    .calculator .tag, .calculator .sec-h2 { color: var(--white); }
+    .calculator .sec-sub { color: rgba(255,255,255,.72); }
+    .calc-panel { max-width: 760px; }
+    .calc-grid { display: grid; grid-template-columns: 1fr 220px; gap: 0; border: 2px solid var(--white); margin-bottom: 22px; }
+    .calc-field { padding: 20px 22px; }
+    .calc-field:first-child { border-right: 2px solid var(--white); }
+    .calc-field label { display: block; font-family: var(--disp); font-weight: 600; font-size: 0.72rem; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.65); margin-bottom: 12px; }
+    .calc-field select, .calc-field input { width: 100%; padding: 12px 14px; background: var(--white); border: 2px solid var(--ink); color: var(--ink); font-family: var(--sans); font-size: 1rem; font-weight: 600; appearance: none; -webkit-appearance: none; }
+    .calc-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ff5722' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; cursor: pointer; }
+    .calc-field select:focus, .calc-field input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--orange); }
+    .calc-result { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 24px 28px; background: var(--orange); border: 2px solid var(--white); }
+    .calc-result__label { font-family: var(--disp); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: var(--white); }
+    .calc-result__value { font-family: var(--disp); font-weight: 700; font-size: 2.8rem; color: var(--white); letter-spacing: -1.5px; line-height: 1; }
+    .calc-disclaimer { margin-top: 18px; font-size: 0.83rem; color: rgba(255,255,255,.6); line-height: 1.55; }
+    .calc-disclaimer a { color: var(--orange); font-weight: 700; }
 
-    /* PROJEKTI */
-    .projekti { background: var(--cream); }
-    .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .proj { background: var(--cream-2); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: transform .2s, box-shadow .2s; }
-    .proj:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(27,36,51,.10); }
-    .proj__img { height: 220px; overflow: hidden; }
-    .proj__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s; }
+    /* PROIECTE */
+    .projekti { background: var(--white); }
+    .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .proj { border: var(--bd); background: var(--white); transition: transform .14s, box-shadow .14s; }
+    .proj:hover { transform: translate(-4px,-4px); box-shadow: 8px 8px 0 var(--navy); }
+    .proj__img { height: 220px; overflow: hidden; border-bottom: var(--bd); }
+    .proj__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
     .proj:hover .proj__img img { transform: scale(1.05); }
     .proj__body { padding: 22px 24px 26px; }
-    .proj__tag { display: block; font-weight: 700; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--terra); margin-bottom: 10px; }
-    .proj__title { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; color: var(--ink); margin-bottom: 9px; }
-    .proj__desc { font-size: 0.9rem; color: var(--body-c); line-height: 1.6; }
+    .proj__tag { display: inline-block; font-family: var(--disp); font-weight: 600; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--white); background: var(--navy); padding: 4px 10px; margin-bottom: 14px; }
+    .proj__title { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 1.15rem; letter-spacing: -.3px; margin-bottom: 10px; line-height: 1.05; }
+    .proj__desc { font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
 
     /* ABOUT */
-    .about { background: var(--cream-2); border-top: 1px solid var(--line); }
-    .about__inner { display: grid; grid-template-columns: 0.85fr 1fr; gap: 60px; align-items: center; }
-    .about__img { border-radius: 8px; overflow: hidden; height: 480px; }
+    .about { background: var(--paper); }
+    .about__inner { display: grid; grid-template-columns: 0.8fr 1fr; gap: 56px; align-items: center; }
+    .about__img { border: var(--bd); overflow: hidden; height: 480px; box-shadow: 12px 12px 0 var(--orange); }
     .about__img img { width: 100%; height: 100%; object-fit: cover; }
-    .about__body p { font-size: 1.05rem; color: var(--body-c); line-height: 1.8; margin-bottom: 18px; }
+    .about__lead { font-family: var(--disp); font-weight: 600; font-size: 1.4rem; line-height: 1.2; letter-spacing: -.5px; margin-bottom: 22px; }
+    .about__body p { font-size: 1.02rem; color: var(--muted); line-height: 1.75; margin-bottom: 18px; }
     .about__body p:last-child { margin-bottom: 0; }
     .about__body strong { color: var(--ink); }
-    .about__body a { color: var(--terra-dark); font-weight: 600; }
-    .about__lead { font-family: var(--serif) !important; font-style: italic; font-weight: 500; font-size: 1.3rem !important; color: var(--muted) !important; line-height: 1.5 !important; }
+    .about__body a { color: var(--blue); font-weight: 700; }
 
     /* REVIEWS */
-    .reviews { background: var(--cream); }
-    .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    .rev { background: var(--cream-2); border: 1px solid var(--line); border-radius: 8px; padding: 30px 28px; }
-    .rev__mark { font-family: var(--serif); font-weight: 700; font-size: 3rem; line-height: 0.6; color: var(--terra); opacity: .55; }
-    .rev__text { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.05rem; color: var(--ink); line-height: 1.55; margin: 10px 0 20px; }
-    .rev__author { font-weight: 700; font-size: 0.92rem; color: var(--ink); }
-    .rev__meta { font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+    .reviews { background: var(--white); }
+    .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .rev { border: var(--bd); padding: 30px 28px; background: var(--white); }
+    .rev__mark { font-family: var(--disp); font-weight: 700; font-size: 3.4rem; line-height: 0.5; color: var(--orange); }
+    .rev__text { font-size: 1rem; color: var(--ink); line-height: 1.6; margin: 18px 0 22px; font-weight: 500; }
+    .rev__author { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 0.95rem; letter-spacing: -.2px; }
+    .rev__meta { font-size: 0.74rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-top: 4px; font-weight: 600; }
 
-    /* CTA */
-    .cta { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; }
-    .cta__pill { margin-bottom: 26px; }
-    .cta__h2 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; letter-spacing: -1px; margin-bottom: 18px; max-width: 18ch; margin-left: auto; margin-right: auto; }
-    .cta__sub { font-size: 1.06rem; color: var(--muted); line-height: 1.7; max-width: 50ch; margin: 0 auto 36px; }
+    /* CTA (orange color block) */
+    .cta { background: var(--orange); border-top: var(--bd); border-bottom: var(--bd); text-align: center; }
+    .cta__pill { display: inline-block; border: 2px solid var(--ink); background: var(--white); font-family: var(--disp); font-weight: 600; font-size: 0.74rem; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; margin-bottom: 28px; }
+    .cta__h2 { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 0.92; letter-spacing: -2px; color: var(--ink); margin-bottom: 22px; max-width: 16ch; margin-left: auto; margin-right: auto; }
+    .cta__sub { font-size: 1.06rem; color: rgba(18,20,27,.78); line-height: 1.6; max-width: 52ch; margin: 0 auto 38px; font-weight: 500; }
 
     /* FOOTER */
-    .footer { background: var(--ink); padding: 64px 0 40px; }
-    .footer__top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.12); margin-bottom: 34px; }
-    .footer__name { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; color: var(--white); margin-bottom: 6px; }
-    .footer__sub { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 18px; }
-    .footer__desc { font-size: 0.94rem; color: rgba(255,255,255,.6); line-height: 1.75; max-width: 380px; }
-    .footer__col-title { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 16px; }
-    .footer__item { font-size: 0.96rem; color: rgba(255,255,255,.7); line-height: 1.5; margin-bottom: 12px; }
-    .footer__item a { color: rgba(255,255,255,.7); transition: color .2s; }
-    .footer__item a:hover { color: var(--terra); }
-    .footer__copy { font-size: 0.85rem; color: rgba(255,255,255,.35); }
+    .footer { background: var(--ink); padding: 70px 0 40px; color: var(--white); }
+    .footer__top { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 2px solid rgba(255,255,255,.16); margin-bottom: 32px; }
+    .footer__name { font-family: var(--disp); font-weight: 700; text-transform: uppercase; font-size: 1.7rem; letter-spacing: -.5px; margin-bottom: 6px; }
+    .footer__sub { font-weight: 700; font-size: 0.66rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
+    .footer__desc { font-size: 0.94rem; color: rgba(255,255,255,.6); line-height: 1.7; max-width: 400px; }
+    .footer__col-title { font-family: var(--disp); font-weight: 600; font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 18px; }
+    .footer__item { font-size: 0.96rem; color: rgba(255,255,255,.78); line-height: 1.5; margin-bottom: 12px; }
+    .footer__item a { transition: color .15s; }
+    .footer__item a:hover { color: var(--orange); }
+    .footer__copy { font-size: 0.82rem; color: rgba(255,255,255,.4); letter-spacing: .3px; }
 
     /* RESPONSIVE */
     @media (max-width: 920px) {
+      .hero__grid { grid-template-columns: 1fr; gap: 28px; align-items: start; }
       .svc-grid { grid-template-columns: repeat(2, 1fr); }
       .proj-grid { grid-template-columns: repeat(2, 1fr); }
       .rev-grid { grid-template-columns: 1fr; }
-      .about__inner { grid-template-columns: 1fr; gap: 36px; }
-      .about__img { height: 360px; order: -1; }
-      .footer__top { grid-template-columns: 1fr; gap: 32px; }
+      .about__inner { grid-template-columns: 1fr; gap: 40px; }
+      .about__img { height: 360px; order: -1; box-shadow: 8px 8px 0 var(--orange); }
+      .footer__top { grid-template-columns: 1fr; gap: 30px; }
     }
     @media (max-width: 680px) {
-      .nav__links { display: none; position: absolute; top: 100%; right: 6%; flex-direction: column; align-items: flex-start; gap: 0; background: var(--cream); border: 1px solid var(--line); border-radius: 0 0 10px 10px; padding: 8px 0; min-width: 220px; box-shadow: 0 10px 30px rgba(27,36,51,.12); }
+      .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: var(--paper); border-bottom: var(--bd); padding: 6px 0; }
       .nav__toggle:checked ~ .nav__links { display: flex; }
-      .nav__links li { width: 100%; }
-      .nav__links a { display: block; width: 100%; padding: 13px 22px; }
-      .nav__phone { border: none; border-radius: 0; }
-      .nav__burger { display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--ink); cursor: pointer; min-width: 44px; min-height: 44px; }
+      .nav__links li { width: 100%; border-top: 2px solid rgba(18,20,27,.1); }
+      .nav__links a { display: block; width: 100%; padding: 14px 5%; }
+      .nav__phone { border: none; }
+      .nav__burger { display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--ink); cursor: pointer; min-width: 46px; min-height: 46px; border: 2px solid var(--ink); }
       .svc-grid { grid-template-columns: 1fr; }
       .proj-grid { grid-template-columns: 1fr; }
       .trust__grid { grid-template-columns: 1fr; }
-      .trust__item:not(:last-child) { border-right: none; border-bottom: 1px solid var(--line); }
+      .trust__item:not(:last-child) { border-right: none; border-bottom: 2px solid rgba(255,255,255,.18); }
       .calc-grid { grid-template-columns: 1fr; }
+      .calc-field:first-child { border-right: none; border-bottom: 2px solid var(--white); }
       section { padding: 64px 0; }
-      .hero { padding: 60px 0 56px; }
+      .hero { padding: 56px 0 0; }
       .hero__ctas { flex-direction: column; align-items: stretch; }
-      .btn--ghost { padding: 14px 28px; border: 1px solid var(--line); }
+      .calc-result__value { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -230,33 +250,37 @@
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <div class="hero__pill"><span class="pill">Renovări · București · [FIRMA]</span></div>
-    <h1 class="hero__h1">Renovare apartamente în București — la cheie.</h1>
-    <p class="hero__lead">[NUME] — meșterul dumneavoastră pentru renovarea apartamentelor, băilor și toate lucrările de finisaj. O singură echipă, de la pregătire până la mutare.</p>
-    <p class="hero__body">Precizie în execuție. Termene stabilite și respectate. Zugrăveli, gletuire, rigips, gresie și faianță și băi — totul într-un singur loc, echipă proprie și deplasare pe teren în București și împrejurimi. Fără subcontractanți, fără surprize neplăcute.</p>
-    <div class="hero__ctas">
-      <a href="tel:[TELEFON]" class="btn btn--terra">📞 [TELEFON]</a>
-      <a href="#prices" class="btn btn--ghost">Vezi prețurile →</a>
+    <span class="hero__pill">Renovări · București · [FIRMA]</span>
+    <h1 class="hero__h1">Renovare apartamente în București <span class="hl">la cheie.</span></h1>
+    <div class="hero__grid">
+      <div>
+        <p class="hero__lead">[NUME] — meșterul dumneavoastră pentru renovarea apartamentelor, băilor și toate lucrările de finisaj. O singură echipă, de la pregătire până la mutare.</p>
+      </div>
+      <div>
+        <p class="hero__body">Precizie în execuție. Termene stabilite și respectate. Zugrăveli, gletuire, rigips, gresie și faianță și băi — totul într-un singur loc, echipă proprie și deplasare pe teren în București și împrejurimi. Fără subcontractanți, fără surprize neplăcute.</p>
+        <div class="hero__ctas">
+          <a href="tel:[TELEFON]" class="btn btn--orange">📞 [TELEFON]</a>
+          <a href="#prices" class="btn btn--outline">Vezi prețurile →</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <!-- TRUST -->
 <div class="trust">
-  <div class="wrap">
-    <div class="trust__grid">
-      <div class="trust__item">
-        <div class="trust__k">Evaluare gratuită</div>
-        <div class="trust__v">Deplasare pe teren și estimare fără obligații</div>
-      </div>
-      <div class="trust__item">
-        <div class="trust__k">Toate etapele lucrărilor</div>
-        <div class="trust__v">O echipă, un contact, o singură ofertă</div>
-      </div>
-      <div class="trust__item">
-        <div class="trust__k">Ofertă fixă</div>
-        <div class="trust__v">Preț stabilit, fără costuri ascunse</div>
-      </div>
+  <div class="trust__grid">
+    <div class="trust__item">
+      <div class="trust__k">Evaluare <span>gratuită</span></div>
+      <div class="trust__v">Deplasare pe teren și estimare fără obligații</div>
+    </div>
+    <div class="trust__item">
+      <div class="trust__k">Toate <span>etapele</span></div>
+      <div class="trust__v">O echipă, un contact, o singură ofertă</div>
+    </div>
+    <div class="trust__item">
+      <div class="trust__k">Ofertă <span>fixă</span></div>
+      <div class="trust__v">Preț stabilit, fără costuri ascunse</div>
     </div>
   </div>
 </div>
@@ -265,7 +289,7 @@
 <section class="services" id="services">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-eyebrow">Servicii</span>
+      <span class="tag">Servicii</span>
       <h2 class="sec-h2">Renovări și lucrări de finisaj</h2>
       <p class="sec-sub">De la renovarea completă a apartamentului până la zugrăveli precise — o singură echipă de meșteri pentru toate etapele lucrărilor în București și împrejurimi.</p>
     </div>
@@ -314,7 +338,7 @@
 <section class="prices" id="prices">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-eyebrow">Prețuri</span>
+      <span class="tag">Prețuri</span>
       <h2 class="sec-h2">Prețuri transparente</h2>
       <p class="sec-sub">Prețuri orientative. Pentru o ofertă exactă este necesară o evaluare la fața locului.</p>
     </div>
@@ -344,7 +368,7 @@
   <div class="wrap">
     <div class="calc-panel">
       <div class="sec-head" style="margin-bottom:34px;">
-        <span class="sec-eyebrow">Calculator</span>
+        <span class="tag tag--light">Calculator</span>
         <h2 class="sec-h2">Calcul estimativ de cost</h2>
         <p class="sec-sub">Introduceți suprafața și alegeți tipul lucrării pentru o estimare rapidă. Pentru o ofertă exactă, sunați-ne.</p>
       </div>
@@ -376,7 +400,7 @@
 <section class="projekti" id="projekti">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-eyebrow">Ce facem</span>
+      <span class="tag">Ce facem</span>
       <h2 class="sec-h2">Proiecte pe care le realizăm</h2>
       <p class="sec-sub">Tipuri de renovări și lucrări pe care le preluăm în București și împrejurimi — de la o singură cameră până la proiecte „la cheie".</p>
     </div>
@@ -441,8 +465,8 @@
         <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=840&q=80" alt="[NUME] – meșter pentru renovări, București" loading="lazy" />
       </div>
       <div>
-        <span class="sec-eyebrow">Despre mine</span>
-        <h2 class="sec-h2">[NUME]</h2>
+        <span class="tag">Despre mine</span>
+        <h2 class="sec-h2" style="margin-top:18px;">[NUME]</h2>
         <div class="about__body">
           <p class="about__lead">Meșterul în care puteți avea încredere — de la prima evaluare până la predarea cheilor.</p>
           <p>[NUME] este fondatorul și coordonatorul firmei <strong>[FIRMA]</strong>, cu sediul în București. Este specializat în renovarea apartamentelor și caselor — zugrăveli, gletuire, rigips, gresie și faianță și renovare băi.</p>
@@ -458,7 +482,7 @@
 <section class="reviews" id="reviews">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-eyebrow">Recenzii</span>
+      <span class="tag">Recenzii</span>
       <h2 class="sec-h2">Ce spun clienții</h2>
       <p class="sec-sub">Experiențele clienților din București și împrejurimi.</p>
     </div>
@@ -488,10 +512,10 @@
 <!-- CTA -->
 <section class="cta" id="kontakt">
   <div class="wrap">
-    <div class="cta__pill"><span class="pill">Ofertă gratuită</span></div>
+    <span class="cta__pill">Ofertă gratuită</span>
     <h2 class="cta__h2">Sunați astăzi, programăm o evaluare.</h2>
     <p class="cta__sub">Venim la fața locului, evaluăm lucrările și vă oferim o ofertă detaliată — fără costuri ascunse și fără obligații.</p>
-    <a href="tel:[TELEFON]" class="btn btn--terra" style="font-size:1.08rem;padding:16px 38px;">📞 [TELEFON]</a>
+    <a href="tel:[TELEFON]" class="btn btn--ink">📞 [TELEFON]</a>
   </div>
 </section>
 

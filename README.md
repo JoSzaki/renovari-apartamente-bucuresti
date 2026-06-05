@@ -6,7 +6,7 @@ Pachet one-pager cu alegerea versiunii:
 
 - `index.html` – alegerea versiunii (Versiunea 1 / Versiunea 2)
 - `version1/` – stil modern verde, cu listă de prețuri sub formă de tabel
-- `version2/` – stil editorial teracotă, cu calculator interactiv de costuri
+- `version2/` – stil bold „swiss" (blocuri de culoare bleu + portocaliu), cu calculator interactiv de costuri
 
 Contact: [NUME] · [TELEFON]
 
