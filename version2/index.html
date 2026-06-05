@@ -280,13 +280,13 @@
         <div class="svc__idx">02</div>
         <h3 class="svc__title">Zugrăveli și vopsitorii</h3>
         <p class="svc__text">Zugrăvirea interioară a pereților și tavanelor, vopsea albă sau colorată, 2–3 straturi. Pregătire și amorsare pentru rezultate durabile și frumoase.</p>
-        <span class="svc__price">de la €3,5/m²</span>
+        <span class="svc__price">de la 18 lei/m²</span>
       </article>
       <article class="svc">
         <div class="svc__idx">03</div>
         <h3 class="svc__title">Gletuire și șlefuire</h3>
         <p class="svc__text">Gletuire în mai multe straturi, șlefuire și amorsare pentru suprafețe perfect netede și drepte, gata de vopsit.</p>
-        <span class="svc__price">de la €4/m²</span>
+        <span class="svc__price">de la 20 lei/m²</span>
       </article>
       <article class="svc">
         <div class="svc__idx">04</div>
@@ -322,10 +322,10 @@
       <table class="price-table">
         <thead><tr><th>Descrierea lucrărilor</th><th>Unitate</th><th>Preț</th></tr></thead>
         <tbody>
-          <tr><td>Zugrăveli interioare (vopsitorii)</td><td>m²</td><td>€3,5 – €6</td></tr>
-          <tr><td>Gletuirea pereților și tavanelor</td><td>m²</td><td>€4 – €7</td></tr>
-          <tr><td>Armare cu plasă și adeziv</td><td>m²</td><td>€6 – €10</td></tr>
-          <tr><td>Finisarea glafurilor (ferestre și uși)</td><td>m²</td><td>€10 – €15</td></tr>
+          <tr><td>Zugrăveli interioare (vopsitorii)</td><td>m²</td><td>18 – 30 lei</td></tr>
+          <tr><td>Gletuirea pereților și tavanelor</td><td>m²</td><td>20 – 35 lei</td></tr>
+          <tr><td>Armare cu plasă și adeziv</td><td>m²</td><td>30 – 50 lei</td></tr>
+          <tr><td>Finisarea glafurilor (ferestre și uși)</td><td>m²</td><td>50 – 75 lei</td></tr>
           <tr><td>Lucrări de rigips și gips-carton</td><td colspan="2" class="byagr">la cerere</td></tr>
           <tr><td>Montaj gresie și faianță</td><td colspan="2" class="byagr">la cerere</td></tr>
           <tr><td>Renovare băi</td><td colspan="2" class="byagr">la cerere</td></tr>
@@ -352,10 +352,10 @@
         <div class="calc-field">
           <label for="calc-service">Tipul lucrării</label>
           <select id="calc-service">
-            <option value="3.5">Zugrăveli interioare — de la €3,5/m²</option>
-            <option value="4">Gletuirea pereților și tavanelor — de la €4/m²</option>
-            <option value="6">Armare cu plasă și adeziv — de la €6/m²</option>
-            <option value="10">Finisarea glafurilor (ferestre și uși) — de la €10/m²</option>
+            <option value="18">Zugrăveli interioare — de la 18 lei/m²</option>
+            <option value="20">Gletuirea pereților și tavanelor — de la 20 lei/m²</option>
+            <option value="30">Armare cu plasă și adeziv — de la 30 lei/m²</option>
+            <option value="50">Finisarea glafurilor (ferestre și uși) — de la 50 lei/m²</option>
           </select>
         </div>
         <div class="calc-field">
@@ -365,7 +365,7 @@
       </div>
       <div class="calc-result">
         <span class="calc-result__label">Preț orientativ (de la) · fără TVA</span>
-        <span class="calc-result__value" id="calc-output">€175</span>
+        <span class="calc-result__value" id="calc-output">900 lei</span>
       </div>
       <p class="calc-disclaimer">* Calcul orientativ pentru planificare, conform celui mai mic preț din interval. Prețul real depinde de starea suprafeței și de specificul proiectului. Pentru o ofertă exactă: <a href="tel:[TELEFON]">[TELEFON]</a>.</p>
     </div>
@@ -530,7 +530,7 @@
     });
   });
   var svc=document.getElementById('calc-service'),area=document.getElementById('calc-area'),out=document.getElementById('calc-output');
-  function update(){var p=parseFloat(svc.value)||0,a=parseFloat(area.value)||0;if(a<1)a=1;out.textContent='€'+Math.round(p*a).toLocaleString('ro-RO');}
+  function update(){var p=parseFloat(svc.value)||0,a=parseFloat(area.value)||0;if(a<1)a=1;out.textContent=Math.round(p*a).toLocaleString('ro-RO')+' lei';}
   if(svc&&area&&out){svc.addEventListener('change',update);area.addEventListener('input',update);update();}
 })();
 </script>
