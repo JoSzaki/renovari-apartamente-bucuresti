@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renovări apartamente București – [NUME] | [FIRMA]</title>
+  <meta name="description" content="Renovări apartamente București – [NUME], [FIRMA]. Zugrăveli, gletuire, rigips, montaj gresie și faianță și renovare băi. Sunați: [TELEFON]" />
+  <meta name="keywords" content="renovări apartamente București, renovare apartament București, zugrăveli București, gletuire București, rigips București, montaj gresie faianță București, renovare baie, amenajări interioare București" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f4429" />
+  <link rel="canonical" href="https://joszaki.github.io/renovari-apartamente-bucuresti/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Renovări apartamente București – [NUME]" />
+  <meta property="og:description" content="Renovări apartamente în București – zugrăveli, gletuire, rigips, gresie și faianță, băi. Sunați [TELEFON]." />
+  <meta property="og:locale" content="ro_RO" />
+
+  <!-- Geo -->
+  <meta name="geo.region" content="RO-B" />
+  <meta name="geo.placename" content="București" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://joszaki.github.io/renovari-apartamente-bucuresti/#business",
+        "name": "[FIRMA] – [NUME]",
+        "description": "Renovări apartamente București – zugrăveli, gletuire, rigips, montaj gresie și faianță și renovare băi.",
+        "telephone": "[TELEFON]",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "București",
+          "addressCountry": "RO"
+        },
+        "areaServed": [
+          {"@type": "Place", "name": "București"},
+          {"@type": "Place", "name": "București și împrejurimi"}
+        ],
+        "priceRange": "€3,5–€15/m²"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ce zonă acoperiți?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Lucrăm în principal în București, dar acceptăm și lucrări în zona limitrofă și în județul Ilfov."}
+          },
+          {
+            "@type": "Question",
+            "name": "Cum obțin o ofertă?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Sunați la [TELEFON] pentru o evaluare gratuită la fața locului și o ofertă detaliată."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --p: #0f4429;
+      --a: #15803d;
+      --bg: #eef7f0;
+      --white: #ffffff;
+      --text: #14241a;
+      --text-muted: #5a6b60;
+      --shadow-sm: 0 2px 16px rgba(0,0,0,.07);
+      --shadow-md: 0 6px 30px rgba(16,80,40,.12);
+      --radius: 16px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); font-size: 16px; line-height: 1.75; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,.97); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 1px 14px rgba(0,0,0,.08); height: 68px; }
+    .nav__inner { max-width: 1100px; margin: 0 auto; padding: 0 5%; height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .nav__logo { font-size: 1.15rem; font-weight: 800; color: var(--p); letter-spacing: -0.5px; white-space: nowrap; }
+    .nav__logo span { color: var(--a); }
+    .nav__links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav__links a { font-size: 0.9rem; font-weight: 500; color: var(--text-muted); padding: 8px 12px; border-radius: 6px; transition: color .2s, background .2s; min-height: 44px; display: flex; align-items: center; }
+    .nav__links a:hover { color: var(--p); background: var(--bg); }
+    .nav__phone { display: flex; align-items: center; gap: 7px; font-size: 0.95rem; font-weight: 700; color: var(--white) !important; background: var(--p) !important; border-radius: 8px; padding: 9px 18px !important; white-space: nowrap; min-height: 44px; transition: background .2s, transform .18s !important; box-shadow: 0 2px 10px rgba(16,80,40,.18); }
+    .nav__phone:hover { background: #0a3119 !important; transform: translateY(-1px); }
+    .nav__burger { display: none; order: 99; }
+
+    /* HERO */
+    .hero { margin-top: 68px; padding: 96px 5% 72px; background: linear-gradient(145deg, var(--bg) 0%, var(--white) 100%); text-align: center; }
+    .hero__inner { max-width: 1100px; margin: 0 auto; }
+    .hero__content { max-width: 700px; margin: 0 auto; }
+    .hero__eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--a); margin-bottom: 22px; }
+    .hero__h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); font-weight: 900; color: var(--p); line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 24px; }
+    .hero__h1 span { color: var(--a); }
+    .hero__sub { font-size: 1.12rem; color: var(--text-muted); max-width: 580px; margin: 0 auto 40px; line-height: 1.8; }
+    .hero__ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .hero__badges { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 36px; }
+    .hero__badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--white); border: 1.5px solid rgba(16,80,40,.12); border-radius: 100px; font-size: 0.85rem; font-weight: 600; color: var(--text-muted); box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+
+    /* BUTTONS */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 28px; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: transform .18s, box-shadow .18s, background .18s; white-space: nowrap; border: none; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--primary { background: linear-gradient(135deg, #15803d 0%, #0f4429 100%); color: var(--white); box-shadow: 0 6px 20px rgba(15,68,41,.32); }
+    .btn--primary:hover { background: linear-gradient(135deg, #11652f 0%, #0a3119 100%); box-shadow: 0 8px 26px rgba(15,68,41,.42); }
+    .btn--outline { background: transparent; color: var(--p); border: 2px solid var(--p); }
+    .btn--outline:hover { background: var(--p); color: var(--white); }
+    .btn--white { background: var(--white); color: var(--p); font-weight: 800; box-shadow: 0 4px 20px rgba(0,0,0,.16); }
+    .btn--white:hover { background: var(--bg); box-shadow: 0 6px 28px rgba(0,0,0,.22); }
+
+    /* STRIP */
+    .strip { background: var(--p); padding: 48px 5%; }
+    .strip__grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+    .strip__item { display: flex; align-items: flex-start; gap: 14px; }
+    .strip__icon { width: 44px; height: 44px; background: rgba(255,255,255,.10); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .strip__label { font-size: 0.75rem; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 4px; }
+    .strip__value { font-size: 0.97rem; font-weight: 600; color: var(--white); line-height: 1.5; word-break: break-word; }
+    .strip__value a { color: var(--white); transition: color .2s; }
+    .strip__value a:hover { color: var(--a); }
+
+    /* SECTION HEAD */
+    .section-head { text-align: center; margin-bottom: 58px; }
+    .section-head__label { font-size: 0.78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--a); display: block; margin-bottom: 14px; }
+    .section-head__h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--p); letter-spacing: -0.8px; margin-bottom: 16px; line-height: 1.2; }
+    .section-head__sub { font-size: 1.05rem; color: var(--text-muted); max-width: 520px; margin: 0 auto; line-height: 1.75; }
+
+    /* FEATURES */
+    .features { padding: 92px 5%; background: var(--white); }
+    .features__grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: var(--white); border-radius: var(--radius); box-shadow: 0 2px 16px rgba(0,0,0,.07); border-top: 3px solid var(--a); padding: 34px 28px; transition: box-shadow .22s, transform .22s; }
+    .card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .card__icon { font-size: 2.2rem; margin-bottom: 18px; }
+    .card__title { font-size: 1.08rem; font-weight: 800; color: var(--p); margin-bottom: 10px; letter-spacing: -0.3px; }
+    .card__text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.75; }
+
+    /* PRICES */
+    .prices { padding: 92px 5%; background: var(--bg); }
+    .price-table-wrap { max-width: 900px; margin: 0 auto; overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+    .price-table { width: 100%; border-collapse: collapse; background: var(--white); font-size: 0.97rem; }
+    .price-table thead tr { background: var(--p); color: var(--white); }
+    .price-table thead th { padding: 14px 20px; text-align: left; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.5px; }
+    .price-table thead th:nth-child(2) { text-align: center; }
+    .price-table thead th:nth-child(3) { text-align: right; }
+    .price-table tbody tr { border-bottom: 1px solid #e0eaf5; transition: background .15s; }
+    .price-table tbody tr:hover { background: var(--bg); }
+    .price-table tbody tr:last-child { border-bottom: none; }
+    .price-table td { padding: 13px 20px; }
+    .price-table td:nth-child(2) { text-align: center; color: var(--text-muted); font-size: 0.92rem; }
+    .price-table td:nth-child(3) { font-weight: 700; color: var(--p); text-align: right; }
+    .price-note { max-width: 900px; margin: 20px auto 0; padding: 16px 20px; background: var(--white); border-left: 4px solid var(--a); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* ABOUT */
+    .about { background: var(--p); padding: 92px 5%; }
+    .about__inner { max-width: 800px; margin: 0 auto; }
+    .about__label { font-size: 0.78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #86efac; display: block; margin-bottom: 20px; }
+    .about__h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--white); letter-spacing: -0.8px; margin-bottom: 34px; line-height: 1.2; }
+    .about__body p { font-size: 1.05rem; color: rgba(255,255,255,.80); line-height: 1.8; margin-bottom: 22px; }
+    .about__body p:last-child { margin-bottom: 0; }
+    .about__body a { color: #86efac; font-weight: 700; }
+
+    /* CTA BAND */
+    .cta-band { background: var(--a); padding: 78px 5%; text-align: center; }
+    .cta-band__label { font-size: 0.78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,.8); display: block; margin-bottom: 16px; }
+    .cta-band__h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: var(--white); letter-spacing: -1px; margin-bottom: 14px; line-height: 1.15; }
+    .cta-band__sub { font-size: 1.05rem; color: rgba(255,255,255,.9); margin-bottom: 38px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.75; }
+
+    /* REFERENCES */
+    .references { padding: 92px 5%; background: var(--white); }
+    .ref-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .ref-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1.5px solid #e0eaf5; transition: box-shadow .22s, transform .22s; }
+    .ref-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .ref-card__img { height: 210px; overflow: hidden; }
+    .ref-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+    .ref-card:hover .ref-card__img img { transform: scale(1.04); }
+    .ref-card__body { padding: 20px 22px 26px; }
+    .ref-card__tag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--a); background: var(--bg); padding: 3px 10px; border-radius: 100px; margin-bottom: 10px; }
+    .ref-card__title { font-size: 1rem; font-weight: 800; color: var(--p); margin-bottom: 8px; line-height: 1.3; }
+    .ref-card__desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* REVIEWS */
+    .reviews { background: var(--bg); padding: 92px 5%; }
+    .reviews__grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .review-card { background: var(--white); border-radius: var(--radius); box-shadow: 0 2px 16px rgba(0,0,0,.07); border-left: 4px solid var(--a); padding: 30px 26px; }
+    .review-card__stars { color: #e8a21a; font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .review-card__text { font-size: 0.97rem; color: var(--text); line-height: 1.75; margin-bottom: 18px; font-style: italic; }
+    .review-card__author { font-size: 0.9rem; font-weight: 700; color: var(--p); }
+    .review-card__date { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* FAQ */
+    .faq { background: var(--white); padding: 92px 5%; }
+    .faq__list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .faq__item { border: 1.5px solid #ccd9ec; border-radius: var(--radius); overflow: hidden; background: var(--white); transition: border-color .2s; }
+    .faq__item:hover { border-color: var(--a); }
+    .faq__item summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 22px; font-size: 1.02rem; font-weight: 700; color: var(--p); cursor: pointer; list-style: none; min-height: 64px; background: var(--white); transition: background .18s; user-select: none; line-height: 1.4; }
+    .faq__item summary::-webkit-details-marker { display: none; }
+    .faq__item summary::after { content: "+"; font-size: 1.5rem; font-weight: 300; color: var(--a); flex-shrink: 0; line-height: 1; }
+    .faq__item[open] summary { background: var(--bg); border-bottom: 1.5px solid #ccd9ec; }
+    .faq__item[open] summary::after { content: "−"; }
+    .faq__answer { padding: 20px 22px 26px; font-size: 0.98rem; color: var(--text-muted); line-height: 1.75; }
+    .faq__answer a { color: var(--p); font-weight: 700; }
+
+    /* CONTACT */
+    .contact { background: var(--bg); padding: 92px 5%; }
+    .contact__grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .contact-card { background: var(--white); border-radius: var(--radius); box-shadow: 0 2px 16px rgba(0,0,0,.07); padding: 28px 24px; display: flex; align-items: flex-start; gap: 16px; transition: box-shadow .2s, transform .2s; }
+    .contact-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .contact-card--phone { border-top: 3px solid var(--a); grid-column: span 3; }
+    .contact-card__ico { width: 48px; height: 48px; min-width: 48px; border-radius: 10px; background: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
+    .contact-card--phone .contact-card__ico { background: var(--a); font-size: 1.5rem; width: 56px; height: 56px; min-width: 56px; }
+    .contact-card__label { font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+    .contact-card__value { font-size: 1rem; font-weight: 600; color: var(--p); line-height: 1.5; }
+    .contact-card--phone .contact-card__value { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.5px; }
+    .contact-card__value a { color: inherit; transition: opacity .18s; }
+    .contact-card__value a:hover { opacity: .75; }
+    .contact-card__note { font-size: 0.88rem; color: var(--text-muted); margin-top: 6px; line-height: 1.5; }
+
+    /* FOOTER */
+    .footer { background: var(--p); padding: 64px 5% 40px; }
+    .footer__inner { max-width: 1100px; margin: 0 auto; }
+    .footer__top { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.10); }
+    .footer__logo { font-size: 1.2rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 14px; }
+    .footer__logo span { color: var(--a); }
+    .footer__desc { font-size: 0.94rem; color: rgba(255,255,255,.75); line-height: 1.75; max-width: 380px; }
+    .footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .footer__copy { font-size: 0.87rem; color: rgba(255,255,255,.7); }
+    .footer__address { font-size: 0.87rem; color: rgba(255,255,255,.7); }
+    .footer__address a { color: rgba(255,255,255,.7); transition: color .2s; }
+    .footer__address a:hover { color: var(--a); }
+
+    /* RESPONSIVE */
+    @media (max-width: 920px) {
+      .features__grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews__grid { grid-template-columns: repeat(2, 1fr); }
+      .ref-grid { grid-template-columns: repeat(2, 1fr); }
+      .strip__grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    }
+    @media (max-width: 768px) {
+      .nav__links { display: none; }
+      .nav__phone { display: none !important; }
+      .nav__burger { display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.5rem; padding: 8px 14px; color: var(--p); user-select: none; min-height: 44px; min-width: 44px; border-radius: 8px; }
+      .nav__toggle:checked ~ .nav__links { display: flex !important; flex-direction: column; position: absolute; top: 100%; right: 5%; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 8px 0; min-width: 220px; border-radius: 0 0 12px 12px; z-index: 200; gap: 0; }
+      .nav__toggle:checked ~ .nav__links li { width: 100%; list-style: none; }
+      .nav__toggle:checked ~ .nav__links a { padding: 14px 22px !important; width: 100%; font-size: 1rem; color: var(--p) !important; background: transparent !important; border-radius: 0 !important; font-weight: 500; box-shadow: none !important; justify-content: flex-start; min-height: 48px; }
+      .nav__toggle:checked ~ .nav__links .nav__phone { display: flex !important; color: var(--a) !important; background: transparent !important; font-weight: 700 !important; }
+      .features__grid, .reviews__grid, .ref-grid, .contact__grid { grid-template-columns: 1fr; }
+      .contact-card--phone { grid-column: span 1; }
+      .strip__grid { grid-template-columns: 1fr 1fr; }
+      .footer__top { grid-template-columns: 1fr; }
+      .footer__bottom { flex-direction: column; align-items: flex-start; }
+      .hero { padding: 68px 5% 60px; }
+      .hero__ctas { flex-direction: column; }
+      .hero__ctas .btn { width: 100%; }
+      .about, .features, .faq, .contact, .reviews, .prices { padding: 68px 5%; }
+      .cta-band { padding: 60px 5%; }
+    }
+    @media (max-width: 480px) {
+      .strip__grid { grid-template-columns: 1fr; }
+      .contact-card--phone .contact-card__value { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Navigație">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">[NUME] <span></span></a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle" hidden>
+    <ul class="nav__links" role="list">
+      <li><a href="#services">Servicii</a></li>
+      <li><a href="#prices">Prețuri</a></li>
+      <li><a href="#about">Despre noi</a></li>
+      <li><a href="#references">Proiecte</a></li>
+      <li><a href="#reviews">Recenzii</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:[TELEFON]" class="nav__phone">📞 [TELEFON]</a></li>
+    </ul>
+    <label for="nav-toggle" class="nav__burger" aria-label="Deschide meniul">☰</label>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Renovări apartamente · București</span>
+      <h1 class="hero__h1">Renovări apartamente<br><span>București</span></h1>
+      <p class="hero__sub">Renovări complete de apartamente și case în București – zugrăveli, gletuire, rigips, montaj gresie și faianță și renovare băi. [NUME], [FIRMA].</p>
+      <div class="hero__ctas">
+        <a href="tel:[TELEFON]" class="btn btn--primary">📞 [TELEFON]</a>
+        <a href="#prices" class="btn btn--outline">Vezi prețurile →</a>
+      </div>
+      <div class="hero__badges">
+        <span class="hero__badge">✓ Evaluare gratuită la fața locului</span>
+        <span class="hero__badge">✓ Toate lucrările într-un singur loc</span>
+        <span class="hero__badge">✓ București și împrejurimi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip" aria-label="Informații de contact">
+  <div class="strip__grid">
+    <div class="strip__item">
+      <div class="strip__icon">📍</div>
+      <div>
+        <div class="strip__label">Locație</div>
+        <div class="strip__value">București și împrejurimi</div>
+      </div>
+    </div>
+    <div class="strip__item">
+      <div class="strip__icon">📞</div>
+      <div>
+        <div class="strip__label">Telefon</div>
+        <div class="strip__value"><a href="tel:[TELEFON]">[TELEFON]</a></div>
+      </div>
+    </div>
+    <div class="strip__item">
+      <div class="strip__icon">🏗️</div>
+      <div>
+        <div class="strip__label">Firmă</div>
+        <div class="strip__value">[FIRMA]</div>
+      </div>
+    </div>
+    <div class="strip__item">
+      <div class="strip__icon">💶</div>
+      <div>
+        <div class="strip__label">Prețuri de la</div>
+        <div class="strip__value">€3,5/m² – ofertă gratuită</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="features" id="services">
+  <div class="section-head">
+    <span class="section-head__label">Ce oferim</span>
+    <h2 class="section-head__h2">Renovări și lucrări de finisaj în București</h2>
+    <p class="section-head__sub">De la renovarea completă a apartamentului până la zugrăveli precise – o singură echipă pentru toate etapele lucrărilor.</p>
+  </div>
+  <div class="features__grid">
+    <div class="card">
+      <div class="card__icon">🏠</div>
+      <div class="card__title">Renovări apartamente și case</div>
+      <div class="card__text">Renovarea completă a spațiilor de locuit – de la demolare și pregătire până la zugrăveala finală. Coordonăm întregul proiect, un singur contact pentru toate lucrările.</div>
+    </div>
+    <div class="card">
+      <div class="card__icon">🎨</div>
+      <div class="card__title">Zugrăveli și vopsitorii</div>
+      <div class="card__text">Zugrăvirea interioară a pereților și tavanelor, vopsea albă sau colorată, 2–3 straturi. Pregătire corectă și amorsare pentru un rezultat durabil – de la €3,5/m².</div>
+    </div>
+    <div class="card">
+      <div class="card__icon">🪣</div>
+      <div class="card__title">Gletuirea pereților și tavanelor</div>
+      <div class="card__text">Gletuire în mai multe straturi, șlefuire și amorsare. Suprafață perfect netedă și dreaptă, pregătită pentru vopsea sau tapet – de la €4/m².</div>
+    </div>
+    <div class="card">
+      <div class="card__icon">🧱</div>
+      <div class="card__title">Lucrări de rigips și gips-carton</div>
+      <div class="card__text">Pereți despărțitori, tavane false și placări din plăci de gips-carton. Rapid, curat și precis – ideal pentru compartimentarea și reamenajarea spațiului.</div>
+    </div>
+    <div class="card">
+      <div class="card__icon">🧩</div>
+      <div class="card__title">Montaj gresie și faianță</div>
+      <div class="card__text">Montaj de plăci pe pardoseli și pereți – băi, bucătării, holuri și terase. Chituire precisă și rosturi ordonate, durabile.</div>
+    </div>
+    <div class="card">
+      <div class="card__icon">🚿</div>
+      <div class="card__title">Renovare băi</div>
+      <div class="card__text">Reamenajarea completă a băilor – instalații sanitare, gresie și faianță, gips-carton și zugrăveala finală. Soluție funcțională și modernă, la comandă.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+  <div class="section-head">
+    <span class="section-head__label">Prețuri transparente</span>
+    <h2 class="section-head__h2">Listă de prețuri – [NUME], București</h2>
+    <p class="section-head__sub">Prețuri orientative. Pentru o ofertă exactă este necesară o evaluare la fața locului.</p>
+  </div>
+  <div class="price-table-wrap">
+    <table class="price-table" aria-label="Listă de prețuri pentru lucrări">
+      <thead>
+        <tr>
+          <th>Descrierea lucrărilor</th>
+          <th>Unitate</th>
+          <th>Preț</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Zugrăveli interioare (vopsitorii)</td><td>m²</td><td>€3,5 – €6</td></tr>
+        <tr><td>Gletuirea pereților și tavanelor</td><td>m²</td><td>€4 – €7</td></tr>
+        <tr><td>Armare cu plasă și adeziv</td><td>m²</td><td>€6 – €10</td></tr>
+        <tr><td>Finisarea glafurilor (ferestre și uși)</td><td>m²</td><td>€10 – €15</td></tr>
+        <tr><td>Lucrări de rigips și gips-carton</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+        <tr><td>Montaj gresie și faianță</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+        <tr><td>Renovare băi</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+        <tr><td>Renovări apartamente și case</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+        <tr><td>Vopsire garduri</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+        <tr><td>Alte lucrări de construcții și finisaje</td><td colspan="2" style="text-align:center;color:var(--text-muted);font-style:italic">la cerere</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="price-note">Notă: Prețurile sunt orientative și depind de starea suprafeței, amploarea lucrărilor și locația imobilului. Pentru o ofertă exactă este necesară o evaluare la fața locului. Cu stimă, <strong>[NUME]</strong> · [FIRMA] – București</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about__inner">
+    <span class="about__label">Despre noi</span>
+    <h2 class="about__h2">[NUME] – meșterul în care puteți avea încredere în București</h2>
+    <div class="about__body">
+      <p>[NUME] este fondatorul și meșterul principal al firmei <strong>[FIRMA]</strong>, cu sediul în București. Cu ani de experiență în renovarea apartamentelor, caselor și spațiilor comerciale, aduce precizie, ordine și seriozitate în fiecare proiect.</p>
+      <p>[FIRMA] acoperă toate etapele lucrărilor – zugrăveli, gletuire, rigips, montaj gresie și faianță și renovare băi. Totul într-un singur loc, cu un singur contact și o singură ofertă. Fiecare lucrare începe cu o evaluare la fața locului, astfel încât oferta să fie exactă și adaptată spațiului dumneavoastră.</p>
+      <p>Fie că aveți nevoie să rezugrăviți o singură cameră sau să renovați complet apartamentul, vă puteți baza pe prețuri transparente, execuție îngrijită și livrare la timp. Sunați direct la <a href="tel:[TELEFON]">[TELEFON]</a> pentru o evaluare gratuită la fața locului.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <span class="cta-band__label">Ofertă gratuită</span>
+  <h2 class="cta-band__h2">Cereți o ofertă gratuită astăzi</h2>
+  <p class="cta-band__sub" style="margin-bottom:38px;">Sunați-ne direct. Venim, evaluăm spațiul și vă oferim o ofertă detaliată – fără obligații.</p>
+  <a href="tel:[TELEFON]" class="btn btn--white">📞 [TELEFON]</a>
+</section>
+
+<!-- PROIECTE -->
+<section class="references" id="references">
+  <div class="section-head">
+    <span class="section-head__label">Ce facem</span>
+    <h2 class="section-head__h2">Proiecte pe care le realizăm</h2>
+    <p class="section-head__sub">Tipuri de renovări și lucrări pe care le preluăm în București și împrejurimi – de la o singură cameră până la proiecte „la cheie".</p>
+  </div>
+  <div class="ref-grid">
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Renovare apartament București – zugrăveli și gletuire" loading="lazy" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Renovări apartamente</span>
+        <div class="ref-card__title">Renovări apartamente</div>
+        <p class="ref-card__desc">Renovarea completă a apartamentului – demolare și pregătire, gips-carton, gletuire, gresie și faianță și zugrăveala finală. De la o cameră până la proiecte „la cheie".</p>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&q=80" alt="Renovare baie București – gresie și faianță" loading="lazy" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Renovare băi</span>
+        <div class="ref-card__title">Renovare băi</div>
+        <p class="ref-card__desc">Reamenajarea completă a băii – instalații sanitare, gresie și faianță pe pardoseală și pereți, gips-carton și zugrăveala finală.</p>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="../images/gletanje-bojanje.jpg" alt="Gletuire și zugrăveli – București" loading="lazy" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Zugrăveli</span>
+        <div class="ref-card__title">Zugrăveli și gletuire</div>
+        <p class="ref-card__desc">Zugrăvirea interioară a pereților și tavanelor, gletuire în mai multe straturi, șlefuire și amorsare pentru suprafețe perfect netede și drepte.</p>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="../images/keramika.jpg" alt="Montaj gresie și faianță – București" loading="lazy" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Gresie și faianță</span>
+        <div class="ref-card__title">Montaj gresie și faianță</div>
+        <p class="ref-card__desc">Plăci pe pardoseală și pereți în băi, bucătării, holuri și pe terase – tăiere precisă, rosturi drepte și margini ordonate.</p>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Rigips și gips-carton București – pereți despărțitori" loading="lazy" style="object-position: center 35%;" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Rigips</span>
+        <div class="ref-card__title">Rigips și gips-carton</div>
+        <p class="ref-card__desc">Pereți despărțitori, tavane false și placări din plăci de gips-carton pentru compartimentarea și reamenajarea spațiului.</p>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-card__img"><img src="../images/adaptacija-kuca.jpg" alt="Renovare casă – fațadă, București" loading="lazy" /></div>
+      <div class="ref-card__body">
+        <span class="ref-card__tag">Renovări case</span>
+        <div class="ref-card__title">Renovări case și alte lucrări</div>
+        <p class="ref-card__desc">Renovări case, finisarea glafurilor, armare cu plasă, vopsire garduri și alte lucrări de construcții și finisaje – toate etapele cu o singură echipă.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="section-head">
+    <span class="section-head__label">Recenziile clienților</span>
+    <h2 class="section-head__h2">Ce spun clienții despre noi</h2>
+    <p class="section-head__sub">Recenzii reale ale clienților mulțumiți din București și împrejurimi.</p>
+  </div>
+  <div class="reviews__grid">
+    <article class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">„Ne-au renovat tot apartamentul din București – gletuire, zugrăveli, gresie și faianță și baia. Totul executat impecabil, la termen și la prețul exact stabilit. Recomand cu căldură!"</p>
+      <div class="review-card__author">Andrei Popescu</div>
+      <div class="review-card__date">Renovare apartament, București</div>
+    </article>
+    <article class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">„Am refăcut baia din temelii – gresie și faianță nouă, instalații și gips-carton. Lucrarea a fost terminată rapid, îngrijit și la un preț foarte corect. Profesionist de la început până la final."</p>
+      <div class="review-card__author">Maria Ionescu</div>
+      <div class="review-card__date">Renovare baie, București</div>
+    </article>
+    <article class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">„Gletuire și zugrăveli excelente. Pereții sunt perfect netezi și drepți – se vede munca unui adevărat meșter. A venit la timp și a făcut curat după el. Îl vom chema din nou."</p>
+      <div class="review-card__author">Ion Brătianu</div>
+      <div class="review-card__date">Gletuire și zugrăveli, București</div>
+    </article>
+    <article class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">„Pereți despărțitori din rigips și gresie în apartament. Totul curat, precis și exact conform înțelegerii. În sfârșit un meșter care se ține de cuvânt și de termen. Fără surprize la final."</p>
+      <div class="review-card__author">Elena Dumitrescu</div>
+      <div class="review-card__date">Rigips și gresie, București</div>
+    </article>
+    <article class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">„Am cerut oferte de la trei meșteri. A fost cel mai clar în privința a ceea ce include lucrarea și a livrat exact ce a promis. Calitate excelentă, comunicare excelentă."</p>
+      <div class="review-card__author">Tudor Marinescu</div>
+      <div class="review-card__date">Renovare completă, București</div>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-head">
+    <span class="section-head__label">Întrebări frecvente</span>
+    <h2 class="section-head__h2">Tot ce trebuie să știți</h2>
+    <p class="section-head__sub">Întrebări obișnuite despre renovări și lucrări de finisaj în București.</p>
+  </div>
+  <div class="faq__list">
+    <details class="faq__item">
+      <summary>Ce zonă acoperiți?</summary>
+      <div class="faq__answer">Lucrăm în principal în București, dar acceptăm și lucrări în zona limitrofă și în județul Ilfov. Contactați-ne la <a href="tel:[TELEFON]">[TELEFON]</a> pentru a verifica disponibilitatea pentru locația dumneavoastră.</div>
+    </details>
+    <details class="faq__item">
+      <summary>Cum obțin o ofertă?</summary>
+      <div class="faq__answer">Sunați sau scrieți-ne direct pentru o evaluare gratuită la fața locului. După evaluarea spațiului, a suprafeței și a amplorii lucrărilor, vă vom trimite o ofertă scrisă detaliată. Prețurile din tabelul de mai sus sunt doar orientative.</div>
+    </details>
+    <details class="faq__item">
+      <summary>Faceți renovări complete de apartamente?</summary>
+      <div class="faq__answer">Da – realizăm renovări complete de apartamente și case: demolare și pregătire, gips-carton, gletuire, gresie și faianță, finisarea glafurilor și zugrăveala finală. Toate etapele cu o singură echipă și un singur contact.</div>
+    </details>
+    <details class="faq__item">
+      <summary>Montați gresie și faianță?</summary>
+      <div class="faq__answer">Da. Montăm plăci pe pardoseală și pereți în băi, bucătării, holuri și pe terase – cu tăiere precisă, rosturi drepte și margini ordonate.</div>
+    </details>
+    <details class="faq__item">
+      <summary>Faceți renovare de băi „la cheie"?</summary>
+      <div class="faq__answer">Da – preluăm renovarea completă a băii: instalații, gips-carton, gresie și faianță și lucrări de finisaj. Prețul se stabilește la cerere, după evaluarea la fața locului.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-head">
+    <span class="section-head__label">Contact</span>
+    <h2 class="section-head__h2">Luați legătura cu noi</h2>
+    <p class="section-head__sub">Sunați, scrieți sau treceți pe la noi – vă ajutăm cu plăcere.</p>
+  </div>
+  <div class="contact__grid">
+    <div class="contact-card contact-card--phone">
+      <div class="contact-card__ico">📞</div>
+      <div>
+        <div class="contact-card__label">Telefon – sunați acum</div>
+        <div class="contact-card__value"><a href="tel:[TELEFON]">[TELEFON]</a></div>
+        <div class="contact-card__note">[NUME] · [FIRMA] · București</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card__ico">📍</div>
+      <div>
+        <div class="contact-card__label">Locație</div>
+        <div class="contact-card__value">București și împrejurimi</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card__ico">🏗️</div>
+      <div>
+        <div class="contact-card__label">Firmă</div>
+        <div class="contact-card__value">[FIRMA]<br>[NUME]</div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card__ico">💶</div>
+      <div>
+        <div class="contact-card__label">Ofertă</div>
+        <div class="contact-card__value">Evaluare gratuită la fața locului</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo">[NUME] · [FIRMA]</div>
+        <p class="footer__desc">[FIRMA] – renovări apartamente București. Zugrăveli, gletuire, rigips, montaj gresie și faianță și renovare băi în tot Bucureștiul și împrejurimi.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 [NUME] · [FIRMA]. Toate drepturile rezervate.</p>
+      <p class="footer__address">București și împrejurimi &nbsp;|&nbsp; <a href="tel:[TELEFON]">[TELEFON]</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.getElementById('nav-toggle');
+  if(t){
+    document.addEventListener('click',function(e){
+      if(t.checked&&!e.target.closest('nav'))t.checked=false;
+    });
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=this.getAttribute('href').slice(1);
+      if(!id)return;
+      var el=document.getElementById(id);
+      if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
+      if(t)t.checked=false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
